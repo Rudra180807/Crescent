@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Table | Crescent Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Crescent Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="book.html" class="active">Book Table</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+
+  <!-- Book a Table Section -->
+  <section class="book-section">
+    <div class="book-container">
+      <h1>Book a Table</h1>
+      <p>Reserve your table now for a memorable dining experience</p>
+
+      <form class="book-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Your Phone Number" required />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" required />
+        </div>
+
+        <div class="form-group">
+          <label for="people">Number of Guests</label>
+          <select id="people" required>
+            <option value="">Select</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5+">5 or more</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-full">
+    <div class="footer-container">
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h4>CONTACT INFO</h4>
+        <p><strong>Crescent Restaurant & Banquet</strong><br>
+          Opp. Raj Party Plot, Nr. Indira Statue,<br>
+          Lambhvel Road, Anand - 388001, Gujarat (India)</p>
+        <p>📧 info@crescent-restaurant.com</p>
+        <p>🌐 www.crescent-restaurant.com</p>
+      </div>
+  
+      <!-- Restaurant Inquiry -->
+      <div class="footer-column">
+        <h4>FOR RESTAURANT INQUIRY</h4>
+        <p>📞 +91 26922 66429<br>📞 +91 75750 66429</p>
+        <h4>FOR PARCEL / TAKE AWAY INQUIRY</h4>
+        <p>📞 +91 97238 07231</p>
+      </div>
+  
+      <!-- Timing -->
+      <div class="footer-column">
+        <h4>TIMING</h4>
+        <p>&rsaquo; Lunch : 10:30 AM To 03:00 PM</p>
+        
+        <p>&rsaquo; Dinner : 06:30 PM To 10:30 PM</p>
+        <h4>RATE US ON</h4>
+        <div class="social-icons">
+          <img src="tripadvisor.png" alt="TripAdvisor" />
+          <img src="justdial.png" alt="JustDial" />
+          <img src="facebook.png" alt="Facebook" />
+          <img src="google.png" alt="Google" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy;  Copyright 2019 - 2025 | All Right Reserved by Crescent Restaurant </p>
+  </footer>
+
+</body>
+
+</html>
