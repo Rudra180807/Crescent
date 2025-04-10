@@ -1,4 +1,3 @@
-/* General Reset & Body */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,13 +5,11 @@ body {
   color: #333;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #EFD147;
-  /* Green background */
   padding: 15px 30px;
   height: 50px;
 }
@@ -51,18 +48,18 @@ body {
 
 .banquet-section {
   position: relative;
-  background-image: url('exterior.jpg'); /* make sure image is present */
+  background-image: url('exterior.jpg'); 
   background-size: cover;
   background-position: center;
   height: 87vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end; /* aligns content to bottom */
-  padding-bottom: 40px;  /* spacing from bottom */
+  align-items: flex-end; 
+  padding-bottom: 40px; 
 }
 
 .banquet-overlay {
-  background-color: rgba(248, 149, 32, 0.9); /* pink transparent */
+  background-color: rgba(248, 149, 32, 0.9); 
   padding: 30px 50px;
   border-radius: 8px;
 
@@ -74,19 +71,17 @@ body {
 
 .banquet-overlay h2 {
   font-size: 2.5rem;
-  margin-bottom: 0.2rem; /* Reduced space below heading */
-  line-height: 1;       /* Optional: adjusts spacing within the heading */
+  margin-bottom: 0.2rem; 
+  line-height: 1;      
 }
 
 .banquet-overlay p {
   font-size: 1.3rem;
-  margin-top: 0.2rem;     /* Reduced space above paragraph */
+  margin-top: 0.2rem;     
   line-height: 1;
 
 }
 
-
-/* Hero */
 .hero {
   background: url('interior.jpg') no-repeat center center/cover;
   height: 90vh;
@@ -102,7 +97,6 @@ body {
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  /* dark overlay for better text contrast */
   inset: 0;
   z-index: 1;
 }
@@ -151,7 +145,6 @@ body {
   color: white;
 }
 
-/* Preview Section */
 .preview-section {
   padding: 60px 10%;
 }
@@ -190,7 +183,6 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Features */
 .features {
   background: #f8f8f8;
   padding: 60px 10%;
@@ -233,7 +225,6 @@ body {
   color: #555;
 }
 
-/* Call to Action */
 .cta {
   background-color: #00bcd4;
   color: white;
@@ -251,7 +242,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Footer */
 .footer {
   background-color: #0F573A;
   color: white;
@@ -289,7 +279,7 @@ body {
 }
 
 .footer-column p {
-  /* margin: 6px 0; */
+
   font-size: 18px;
   color: #e0e0e0;
 }
@@ -344,7 +334,7 @@ body {
 
 .menu-card:hover img {
   transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .menu-card img {
@@ -375,22 +365,6 @@ body {
   color: #009688;
 }
 
-/* Responsive menu layout */
-@media (max-width: 768px) {
-  .menu-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-card img {
-    width: 100%;
-    height: 180px;
-  }
-
-  .menu-info {
-    padding: 15px;
-  }
-}
 
 .contact-section {
   padding: 60px 20px;
@@ -475,17 +449,6 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-}
 
 .about-section {
   padding: 60px 20px;
@@ -527,118 +490,6 @@ body {
   color: #444;
   line-height: 1.8;
   margin-bottom: 15px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-content h2 {
-    font-size: 28px;
-  }
-
-  .about-content p {
-    font-size: 16px;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .preview-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .features-container {
-    flex-direction: column;
-  }
-}
-
-.order-section {
-  padding: 60px 20px;
-  background-color: #f8f9fa;
-  text-align: center;
-}
-
-.order-container {
-  max-width: 600px;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.order-container h1 {
-  font-size: 32px;
-  color: #0c1022;
-  margin-bottom: 10px;
-}
-
-.order-container p {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.order-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.form-group label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  resize: vertical;
-}
-
-.order-form .btn {
-  background-color: #00bcd4;
-  color: white;
-  border: none;
-  padding: 14px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.order-form .btn:hover {
-  background-color: #0097a7;
 }
 
 .book-section {
@@ -708,3 +559,228 @@ body {
   background-color: #0097a7;
 }
 
+
+@media (max-width: 1200px) {
+  .preview-image img {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banquet-section {
+    height: 70vh;
+  }
+  
+  .banquet-overlay {
+    padding: 25px 40px;
+    max-width: 350px;
+  }
+  
+  .hero h1 {
+    font-size: 42px;
+  }
+  
+  .preview-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .preview-image {
+    margin-top: 30px;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .banquet-section {
+    height: 60vh;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  
+  .banquet-overlay {
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .banquet-overlay h2 {
+    font-size: 2rem;
+  }
+  
+  .banquet-overlay p {
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    height: 80vh;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  .btn, .btn-outline {
+    padding: 10px 20px;
+  }
+  
+  .preview-text, .preview-image {
+    flex: 1 1 100%;
+  }
+  
+  .preview-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .feature-box {
+    max-width: 100%;
+  }
+  
+  .menu-card {
+    flex-direction: column;
+  }
+  
+  .menu-card img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .about-container {
+    flex-direction: column;
+  }
+  
+  .order-container, .book-container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .banquet-section {
+    height: 50vh;
+  }
+  
+  .banquet-overlay {
+    max-width: 250px;
+    padding: 15px;
+  }
+  
+  .banquet-overlay h2 {
+    font-size: 1.5rem;
+  }
+  
+  .banquet-overlay p {
+    font-size: 1rem;
+  }
+  
+  .hero {
+    height: 70vh;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn, .btn-outline {
+    width: 100%;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .preview-text h2 {
+    font-size: 28px;
+  }
+  
+  .menu-section h2, .contact-section h2, .about-content h2 {
+    font-size: 30px;
+  }
+  
+  .menu-category h3 {
+    font-size: 24px;
+  }
+  
+  .footer-column {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .order-container, .book-container {
+    padding: 20px;
+  }
+  
+  .order-container h1, .book-container h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banquet-overlay {
+    max-width: 220px;
+  }
+  
+  .hero h1 {
+    font-size: 24px;
+  }
+  
+  .preview-section, .features, .menu-section, 
+  .contact-section, .about-section, 
+  .order-section, .book-section {
+    padding: 40px 15px;
+  }
+  
+  .menu-card img {
+    height: 150px;
+  }
+}
