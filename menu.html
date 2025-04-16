@@ -2,130 +2,320 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu - Crescent Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crescent Restaurant - Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="logo.png" alt="Crescent Logo" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="menu.html" class="active">Menu</a></li>
-      <li><a href="book.html" >Book Table</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <header>
+    <div class="header-content">
+      <h1>Our Menu</h1>
+      <p>Discover our authentic Mediterranean dishes</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Crescent</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="book.html">Book Table</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section class="menu-section">
-    <h2>Our Menu</h2>
-
-    <div class="menu-category">
-      <h3>Starter</h3>
-      <div class="menu-card">
-        <img src="springroll.jpg" alt="Spring Rolls" onclick="openLightbox(this)" />
-        <div class="menu-info">
-          <h4>Spring Rolls</h4>
-          <p>Crispy vegetarian rolls with dipping sauce.</p>
-          <span class="price">$5.99</span>
-        </div>
-      </div>
-      <div class="menu-card">
-        <img src="paneerchilly.jpeg" alt="Paneer Chilly" />
-        <div class="menu-info">
-          <h4>Paneer Chilly</h4>
-          <p>Paneer with Chilly .</p>
-          <span class="price">$6.49</span>
-        </div>
-      </div>
+  <main class="menu-page">
+    <div class="menu-categories">
+      <a href="#starters" class="category-btn">Starters</a>
+      <a href="#mains" class="category-btn">Main Courses</a>
+      <a href="#desserts" class="category-btn">Desserts</a>
+      <a href="#beverages" class="category-btn">Beverages</a>
+      <a href="#specials" class="category-btn">Specials</a>
     </div>
 
-    <div class="menu-category">
-      <h3>Main Course</h3>
-      <div class="menu-card">
-        <img src="main1.jpeg" alt="Grilled Chicken" />
-        <div class="menu-info">
-          <h4>paneer Angara</h4>
-          <p>Paneer chilly sabji.</p>
-          <span class="price">$12.99</span>
-        </div>
-      </div>
-      <div class="menu-card">
-        <img src="main2.jpeg" alt="Vegetarian Lasagna" />
-        <div class="menu-info">
-          <h4>Vegetarian Lasagna</h4>
-          <p>Layers of pasta with seasonal vegetables.</p>
-          <span class="price">$10.99</span>
-        </div>
-      </div>
-    </div>
+    <section id="starters" class="menu-section">
+      <h3 class="section-title">Starters</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="starter1.jpg" alt="Fig & Cream Cheese Baguette">
+          <div class="menu-item-content">
+            <h4>Hummus Plate</h4>
 
-    <div class="menu-category">
-      <h3>Desserts</h3>
-      <div class="menu-card">
-        <img src="dessert1.jpeg" alt="Cheesecake" />
-        <div class="menu-info">
-          <h4>Cheesecake</h4>
-          <p>Classic New York style cheesecake.</p>
-          <span class="price">$5.49</span>
+            <span class="price">₹75.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
         </div>
-      </div>
-      <div class="menu-card">
-        <img src="dessert2.jpg" alt="Gulab Jamun" />
-        <div class="menu-info">
-          <h4>Gulab Jamun</h4>
-          <p>Warm, soft dough balls soaked in syrup.</p>
-          <span class="price">$3.99</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer-full">
-    <div class="footer-container">
-      <!-- Contact Info -->
-      <div class="footer-column">
-        <h4>CONTACT INFO</h4>
-        <p><strong>Crescent Restaurant & Banquet</strong><br>
-          Opp. Raj Party Plot, Nr. Indira Statue,<br>
-          Lambhvel Road, Anand - 388001, Gujarat (India)</p>
-        <p>📧 info@crescent-restaurant.com</p>
-        <p>🌐 www.crescent-restaurant.com</p>
-      </div>
-  
-      <!-- Restaurant Inquiry -->
-      <div class="footer-column">
-        <h4>FOR RESTAURANT INQUIRY</h4>
-        <p>📞 +91 26922 66429<br>📞 +91 75750 66429</p>
-        <h4>FOR PARCEL / TAKE AWAY INQUIRY</h4>
-        <p>📞 +91 97238 07231</p>
-      </div>
-  
-      <!-- Timing -->
-      <div class="footer-column">
-        <h4>TIMING</h4>
-        <p>&rsaquo; Lunch : 10:30 AM To 03:00 PM</p>
-        
-        <p>&rsaquo; Dinner : 06:30 PM To 10:30 PM</p>
-        <h4>RATE US ON</h4>
-        <div class="social-icons">
-          <img src="tripadvisor.png" alt="TripAdvisor" />
-          <img src="justdial.png" alt="JustDial" />
-          <img src="facebook.png" alt="Facebook" />
-          <img src="google.png" alt="Google" />
+        <div class="menu-item">
+          <img src="starter2.jpg" alt="vegetable-soup">
+          <div class="menu-item-content">
+            <h4>vegetable-soup</h4>
+
+            <span class="price">₹50.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="starter3.jpg" alt="Zucchini and onion stuffing balls">
+          <div class="menu-item-content">
+            <h4>Zucchini and onion stuffing balls</h4>
+
+            <span class="price">₹85.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="starter4.jpeg" alt="Stuffed Grape Leaves">
+          <div class="menu-item-content">
+            <h4>Stuffed Grape Leaves</h4>
+
+            <span class="price">₹80.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <footer class="footer">
+
+
+    <section id="mains" class="menu-section">
+      <h3 class="section-title">Main Courses</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="main1.png" alt="Bacalhau Fritters">
+          <div class="Bacalhau Fritter">
+            <h4>Lamb Mansaf</h4>
+
+            <span class="price">₹100.00</span>
+            <span class="tag">Signature Dish</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="main2.jpg" alt="Golden-glazed carrot, mushroom and hazelnut tart">
+          <div class="menu-item-content">
+            <h4>Golden-glazed carrot, mushroom and hazelnut tart</h4>
+
+            <span class="price">₹150.00</span>
+            <span class="tag">Signature Dish</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="main3.webp" alt="PANEER MASALA">
+          <div class="menu-item-content">
+            <h4>Lamb Mansaf</h4>
+
+            <span class="price">₹165.00</span>
+            <span class="tag">Signature Dish</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="main4.jpg" alt="Vegetable Jalfrezi">
+          <div class="menu-item-content">
+            <h4>Vegetable Jalfrezi</h4>
+
+            <span class="price">₹110.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desserts" class="menu-section">
+      <h3 class="section-title">Desserts</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="dessert1.png" alt="olive garden chocolate brownie lasagna">
+          <div class="menu-item-content">
+            <h4>olive garden chocolate brownie lasagna</h4>
+
+            <span class="price">₹140.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="dessert2.jpg" alt="Tres leches cake">
+          <div class="menu-item-content">
+            <h4>Tres leches cake</h4>
+
+            <span class="price">₹120.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="dessert3.avif" alt="Baklava">
+          <div class="menu-item-content">
+            <h4>Baklava</h4>
+
+            <span class="price">₹115.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="dessert4.jpg" alt="Strawberry Ice Cream Sundae">
+          <div class="menu-item-content">
+            <h4>Strawberry Ice Cream Sundae</h4>
+
+            <span class="price">₹150.00</span>
+            <span class="tag">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="beverages" class="menu-section">
+      <h3 class="section-title">Beverages</h3>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="beverages1.jpg" alt="Raspberry Mojito">
+          <div class="menu-item-content">
+            <h4>Raspberry Mojito</h4>
+
+            <span class="price">₹65.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="beverages2.jpeg" alt="Orange Juice">
+          <div class="menu-item-content">
+            <h4>Orange Juice</h4>
+
+            <span class="price">₹50.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="beverages3.jpg" alt="Iced Caramel Macchiato">
+          <div class="menu-item-content">
+            <h4>Iced Caramel Macchiato</h4>
+
+            <span class="price">₹85.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="beverages4.jpg" alt="Cherry Limeade">
+          <div class="menu-item-content">
+            <h4>Cherry Limeade</h4>
+
+            <span class="price">₹70.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specials" class="menu-section">
+      <h3 class="section-title">Specials</h3>
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img src="special1.jpg" alt="PANJABI DISH">
+          <div class="menu-item-content">
+            <h4>Baklava</h4>
+
+            <span class="price">₹175.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="special2.jpeg" alt="gujrati dish">
+          <div class="menu-item-content">
+            <h4>gujrati dish</h4>
+
+            <span class="price">₹150.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="special3.jpg" alt="south indian dish">
+          <div class="menu-item-content">
+            <h4>south indian dish</h4>
+
+            <span class="price">₹140.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="special4.webp" alt="Braised Indian Chickpea Stew">
+          <div class="menu-item-content">
+            <h4>Braised Indian Chickpea Stew</h4>
+
+            <span class="price">₹130.00</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer>
     <div class="container">
-      <p>&copy;  Copyright 2019 - 2025 | All Right Reserved by Crescent Restaurant </p>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Crescent Restaurant</h3>
+          <p>Opp. Raj Party Plot, Nr. Indira Statue,
+            Lambhvel Road, Anand - 388001, Gujarat (India).</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>For Restaurant Inquiry</h3>
+          <p>📞 +91 26922 66429<br>
+            📞 +91 75750 66429</p>
+          <!-- <p>Sunday: 12pm - 9pm</p> -->
+          <div class="footer-column">
+            <h3>For Parcel / Take away Inquiry</h3>
+            <p>📞 +91 97238 07231</p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Timing</h3>
+          <p>› Lunch : 10:30 AM To 03:00 PM</p>
+          <p>› Dinner : 06:30 PM To 10:30 PM</p>
+
+          <div class="footer-column">
+            <h3>Rate us on</h3>
+            <div class="social-icons">
+              <a href="index.html">
+                <img src="footer1.png" alt="TripAdvisor" />
+              </a>
+              <a href="index.html">
+                <img src="footer2.png" alt="JustDial" />
+              </a>
+              <a href="index.html">
+                <img src="footer3.png" alt="Facebook" />
+              </a>
+              <a href="index.html">
+                <img src="footer4.png" alt="Google" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2023 Crescent Restaurant. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>
